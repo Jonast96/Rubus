@@ -25,6 +25,25 @@ body {
   padding: 20px;
 }
 
+#filter {
+  margin: 0 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.8rem;
+  background-color: #fff;
+  color: #000;
+
+  option {
+    color: #000;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+}
+
 // Typography
 h1,
 h2,
@@ -49,14 +68,8 @@ p {
   color: lighten($color-text, 20%);
 }
 
-// Links
-a {
-  color: $color-accent;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+.whiteText {
+  color: white;
 }
 
 // Buttons
