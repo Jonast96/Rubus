@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TaskItem from "./TaskItem";
-import "../../componentStyles/TaskCard.scss";
+import "../../componentStyles/taskCard.scss";
 
 export default function TaskCard({
   tasks,
