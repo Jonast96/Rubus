@@ -21,11 +21,11 @@ p {
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 0.7rem;
+  font-weight: 500;
 
   &.electrical {
-    background-color: #ffd700;
+    background-color: #d8b800;
   }
 
   &.plumbing {
@@ -53,10 +53,12 @@ p {
 
 .completedTask {
   border-left: 10px solid #00d68f;
+  background-color: #d5f1e8;
 }
 
 .uncompletedTask {
   border-left: 10px solid #ff3d71;
+  background-color: #fddede;
 }
 
 .editTask {
@@ -92,17 +94,14 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  padding: 1rem;
+  padding: 0.7rem;
 
   .taskContent {
     display: flex;
     flex-direction: column;
 
     .dueDate {
-      background-color: #ddd;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-weight: 600;
     }
     p {
@@ -115,17 +114,18 @@ p {
     }
 
     button {
-      background-color: #4caf50;
-      color: white;
-      border: none;
+      background-color: transparent;
+      color: black;
+      border: solid 1px black;
       border-radius: 5px;
-      padding: 10px 20px;
+      padding: 5px 10px;
       cursor: pointer;
-      margin-top: 10px;
       transition: 0.3s;
 
       &:hover {
         background-color: #00d68f;
+        color: white;
+        border: none;
       }
     }
   }
