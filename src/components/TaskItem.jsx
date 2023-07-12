@@ -65,8 +65,17 @@ const TaskItem = ({
       <div className="task">
         <div className="taskContent">
           <div className="categoryDateContainer">
-            <p className={`${task.category} category`}>{task.category}</p>
-            <p className="dueDate">{task.dueDate}</p>
+            <div>
+              <input
+                type="checkbox"
+                onChange={() => handleCompleteTask(index)}
+                checked={task.completed ? true : false}
+              />
+            </div>
+            <div>
+              <p className={`${task.category} category`}>{task.category}</p>
+              <p className="dueDate">{task.dueDate}</p>
+            </div>
           </div>
           <div className="descriptionContainer">
             <p>{task.description}</p>
@@ -78,9 +87,6 @@ const TaskItem = ({
           </div>
           <div className="buttonDiv">
             <button onClick={() => deleteTask(index)}>Delete</button>
-            <button onClick={() => handleCompleteTask(index)}>
-              {task.completed ? "Uncomplete" : "Complete"}
-            </button>
           </div>
         </div>
       </div>
